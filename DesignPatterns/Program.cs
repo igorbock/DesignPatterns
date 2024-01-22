@@ -14,6 +14,11 @@ builder.Services.AddSingleton<IServiceCRUD<WeatherForecast>, WeatherForecastServ
 builder.Services.AddSingleton<IServiceCRUD<Carro>, CarroService>();
 builder.Services.AddSingleton<DesignPatternsLogger>();
 
+builder.Services.AddHttpClient("FIPE", opt =>
+{
+    opt.BaseAddress = new Uri("https://parallelum.com.br");
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
