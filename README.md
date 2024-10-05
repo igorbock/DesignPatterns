@@ -10,5 +10,5 @@ As requisições pelo Postman estão no link:
 
 ### Padrões elaborados
 
-[x] - Strategy
-[] - Observable
+- [x] Strategy
+- [ ] Observable
